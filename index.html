@@ -1,0 +1,88 @@
+<!-- This is my first web project for the longest time.
+    This is a tribute page for Elon Musk. Along this code you will see many comments that I wanted to take note of
+-->
+<!DOCTYPE html> <!--This tells the interpreter that I'm using HTML5 Doctype-->
+<html lang="en"> <!--Not sure why I have this lang="en", maybe it says language is in english-->
+<!--
+I wanted to implement Bootstrap in this project however there are a few requirements I need in running bootstrap.
+1. Add the HTML5 doctype
+2. Bootstrap 3 is mobile-first
+3. Containers
+-->
+<head>
+  <meta charset="utf-8"><!--Please research more about CHARACTER SETS. Satisfies rule #1-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--Search the meta tag as well. Satisfies rule #2-->
+  <!--
+  width=device-width sets the width of the page to follow the screen-width of the device //PROPER MOBILE RENDERING
+  initial-scale=1  part sets the initial zoom level when the page is first loaded by the browser. //TOUCH ZOOMING
+  -->
+  <!--
+  Since I don't want to download bootstrap, below are the dependencies needed
+  -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Elon Musk Bio Page</title>
+</head>
+<body class="container">
+<!--Rule #3
+There are two container classes to choose from:
+
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+-->
+  <div class="jumbotron jumbotron-fluid">
+    <!--Heading-->
+    <div class="row">
+      <div class="col-md-12 text-center"><h1 class="text-primary">How Elon Musk Started</h1></div>
+      <div class="col-md-12 text-center" id="subtitle1"><h2><em>The real life Iron Man</em></h2></div>
+    </div>
+    <!--Picture with Caption-->
+    <div class="row text-center" id="photo-caption">
+      <img class="img-responsive center-block" alt="Lord Elon" src="http://www.appstorechronicle.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-11.25.14-PM.png" width="850px"></img>
+      <div class="center-block"><p>The look of success.</p></div>
+    </div>
+    <!--Timeline text-->
+    <br>
+    <div class="row">
+      <h3 class="text-center">Here's a time line of Elon Musk's life:</h3>
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <ul>
+          <li>1971 - Born in South Africa</li>
+          <li>1988 - Graduates from Pretoria Boys High School with distinctions in science and computer studies</li>
+          <li>1989 to 1991 - Attends college at Queen's University in Kingston, Ontario. Then transfers to the University of Pennsylvannia; complete a BS in Economics(Wharton) and a BA with a major in Physics</li>
+          <li>1995 - Moves to Silicon Valley; defers graduate program in applied physics and materials science at Stanford University to join the Internet boom</li>
+          <li>1999 - Sells Zip2 to Compaq, the personal computer company, for $307 million, of which $22 million went to Musk. Then forms X.com, which in 2000 morphs into PayPal</li>
+          <li>2000 - eBay acquires PayPal for $1.5 billion in stock, of which $165 million goes to Musk</li>
+          <li>2002 - Becomes an American citizen</li>
+          <li>2002 - Founds SpaceX</li>
+          <li>2004 - Invests in Tesla Motors</li>
+          <li>2007 - SpaceX wins $1.6 billion contract to bring cargo to the International Space Station</li>
+          <li>2008 - Becomes Tesla’s CEO</li>
+          <li>2012 - SpaceX becomes the first commercial vehicle to deliver a load of supplies to the International Space Station.</li>
+          <li>2012 - Tesla begins deliveries of the all-electric Model S</li>
+          <li>2013 - Releases sketch and concept of the Hyperloop</li>
+        </ul>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <p class="col-md-6 text-center">"Failure is an option here. If things are not failing, you are not innovating enough."</p>
+      <div class="col-md-3"></div>
+      <div class="col-md-6 pull-right text-muted "><p id="elon">- Elon Musk</p></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 text-center"><h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Elon_Musk">Wikipedia entry</a>.</h3></div>
+      <div class="col-md-3"></div>
+    </div>
+    <div>
+  </div>
+</body>
+</html>
