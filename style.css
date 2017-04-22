@@ -1,24 +1,13 @@
-body{
-  margin-top: 20px;
+img{
+  filter: gray; /*IE-9*/
+  filter: grayscale(1); /*Edge and Firefox*/
+  -webkit-filter: grayscale(1); /*Chrome, Safari, Opera*/
 }
-img {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-}
-
-/* Disable grayscale on hover */
-/*img:hover {
-  -webkit-filter: grayscale(0);
+img:hover{
   filter: none;
-}*/
-
-#photo-caption{
-  background: white;
-  padding: -100px;
-  border-radius: 10px;
-  border: 1px;
+  -webkit-filter: grayscale(0);
 }
-#elon{
-  font-size: 16px;
+.footer{
+  background-color: gray;
+  color: white;
 }
